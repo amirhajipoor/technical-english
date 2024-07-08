@@ -1,0 +1,227 @@
+{
+    "text":"THE ABC'S OF A COMPUTER \n The computer is an electronic machine that stores, retrieves, analyzes and processes data. This machine receives any digitally programmed instructions. A computer is mainly composed of hardware and software, and comes in various sizes, such as mini and mainframe computers, Personal Computer (PC), and tablets. The hardware of a computer includes the system unit, mouse, keyboard, and monitor. However, the software is any set of instructions (most often in the form of a computer program) that directs the computer to perform specific operations. Computer Software running in computers is loaded into their memory through storage devices such as a hard disk, a CD-ROM, a DVD or a flash memory. While some computers are larger than others, the actual components inside them are pretty much the same. Any computer system needs to have two main components in its hardware to work. They are the Central Processing Unit (CPU) and the main memory (or RAM short for Random Access Memory.) \n 1.CPU : \n The CPU is located inside the computer case on the motherboard. It is sometimes called the brain of the computer, and its job is to carry out commands. Whenever you press a key, click the mouse, or start an application, you are sending instructions to the CPU. The CPU is a small chip that fits into the motherboard’s CPU socket, and is covered by a heat sink, a device that absorbs heat from the CPU to cool it down. The processor speed is measured in Megahertz (MHz), or millions of cycles per second, and Gigahertz (GHz), or billions of cycles per second. A faster processor can execute instructions more quickly. However, the actual speed of the computer depends on the speed of many different components, not just the processor, for example the speed of RAM. \n 2. Motherboard : \n The central circuit board holding the CPU, memory, hard drive connector and optical drives is the motherboard. It also keeps the expansion cards to control the video, audio and connections to your computer's ports e.g., USB. In fact, the motherboard is directly and indirectly connected to all parts of the computer. \n 3. Power Supply: \n The desktop computer power supply converts alternating current (AC) from a wall socket to low voltage direct current (DC) to operate the processor and peripheral devices. Several DC voltages are required, and they must be regulated with some accuracy to provide stable operation of the computer. \n 4. RAM : \n RAM is the computer's temporary memory. Whenever a computer performs calculations, it temporarily stores the data in the RAM when needed. The content of this memory disappears when the computer is turned off. If you are working on a document, spreadsheet, or other type of files, you will need to save it to avoid any accidental loss. When you save a file, the data is written to the hard drive, which acts as long-term storage. The capacity of RAM is measured in megabytes (MB) or gigabytes (GB). The more RAM you have, the more tasks your computer can do at the same time. If you don't have enough RAM, you may notice that your computer is sluggish when you have several programs open. Because of this, many people add extra RAM to their computers to improve performance. A bit is the smallest unit of data in computer processing, and a byte is a group of eight bits. A megabyte contains about one million bytes, and a gigabyte is about one billion bytes. \n 5. Hard Drives: \n Computer 's main data center is the hard drive. The software, documents, and files are stored in the hard drive. The data on the hard drive are ‘safe and sound' even after the computer is turned off or unplugged. After a program is run, the computer copies some of the data from the hard drive onto the RAM. This is because the computer could have an easy access to the data. When a file is saved, the data is copied back to the hard drive. The faster a hard drive functions, the faster a computer starts up and loads program icons on the screen. Hard drives are commonly hard disk drives storing data on a magnetic platter. Some computers use solid-state hard drives, i.e. flash hard drives. Though they are expensive, they are more durable than hard disk drives. A USB flash drive is a small, removable flash hard drive plugging into a port, which is a convenient way to carry your document and use them on a different computer. \n 6. Expansion Cards : \n The expansion slots on the motherboard help to add some various types of expansion cards, which are sometimes, called PCI (Peripheral Component Interconnect). Most motherboards have built-in video, sound, network and other parts, but to boost the performance of a computer or to update software in an old computer you need to add one or more cards. Two of the most common types of expansion cards are introduced below. \n 6.1 Video card: \n The video cards are responsible for what you see on the monitor. Most computers now have GPU (Graphics Processing Unit) built into the motherboard but have no separate video card. Having graphics-intense games on the computer requires adding a faster video card to one of the expansion slots and its purpose is to strengthen the computer's performance. \n 6.2 Sound card : \n The sound card or audio is responsible for what you hear through speakers or headphones. Most motherboards have an integrated sound card and it can be upgraded to increase the quality of sound produced. ",
+    "words": [
+        {
+            "word": "Retrieve (v) :",
+ 
+            "meaning": "بازیابی کردن، دوباره بدست آوردن، پس گرفتن"
+         },
+
+         {
+            "word": "Execute (v) :",
+ 
+            "meaning": "اجرا کردن، عمل کردن"
+         },
+
+         {
+            "word": "Optical (adj) :",
+ 
+            "meaning": "نوری، بصری، چشمی ، وابسته به حس بینایی"
+         },
+
+         {
+            "word": "Stable (adj) :",
+ 
+            "meaning": "پایدار ، استوار"
+         },
+
+         {
+            "word": "Sluggish (adj) :",
+ 
+            "meaning": "کند"
+         },
+
+         {
+            "word": "Convenient (adj) :",
+ 
+            "meaning": "راحت ، آسوده، مناسب"
+         },
+
+         {
+            "word": "Avoid (v) :",
+ 
+            "meaning": "اجتناب کردن"
+         },
+
+         {
+            "word": "instructions :",
+ 
+            "meaning": "دستورالعمل"
+         },
+
+         {
+            "word": "composed :",
+ 
+            "meaning": "متشکل از"
+         },
+
+         {
+            "word": "components :",
+ 
+            "meaning": "مؤلفه"
+         },
+
+         {
+            "word": "pretty :",
+ 
+            "meaning": "تقریباً، تا اندازه"
+         },
+
+         {
+            "word": "chip :",
+ 
+            "meaning": "تراشه"
+         },
+
+         {
+            "word": "heat sink :",
+ 
+            "meaning": "گرماگیر"
+         },
+
+         {
+            "word": "absorbs :",
+ 
+            "meaning": "جذب کردن"
+         },
+
+         {
+            "word": "actual :",
+ 
+            "meaning": "واقعی"
+         },
+
+         {
+            "word": "circuit board :",
+ 
+            "meaning": "صفحه مدار"
+         },
+
+         {
+            "word": "audio :",
+ 
+            "meaning": "توسعه"
+         },
+
+         {
+            "word": "expansion :",
+ 
+            "meaning": "سمعی، شنودی"
+         },
+
+         {
+            "word": "converts :",
+ 
+            "meaning": "تبدیل کردن"
+         },
+
+         {
+            "word": "peripheral devices :",
+ 
+            "meaning": "دستگاه جانبی"
+         },
+
+         {
+            "word": "regulated :",
+ 
+            "meaning": "تنظیم کردن"
+         },
+
+         {
+            "word": "temporary :",
+ 
+            "meaning": "موقت"
+         },
+
+         {
+            "word": "turned off :",
+ 
+            "meaning": "خاموش کردن"
+         },
+
+         {
+            "word": "accidental :",
+ 
+            "meaning": "اتفاقی"
+         },
+
+         {
+            "word": "capacity :",
+ 
+            "meaning": "ظرفیت ، گنجایش"
+         },
+
+         {
+            "word": "performance :",
+ 
+            "meaning": "عملکرد ، کارایی"
+         },
+
+         {
+            "word": "safe and sound :",
+ 
+            "meaning": "امن و امان، صحیح و سالم"
+         },
+
+         {
+            "word": "unplugged :",
+ 
+            "meaning": "از برق کشیدن"
+         },
+
+         {
+            "word": "magnetic platter :",
+ 
+            "meaning": "صفحه مغناطیسی"
+         },
+
+         {
+            "word": "solid-state :",
+ 
+            "meaning": "یکپارچه"
+         },
+
+         {
+            "word": "durable :",
+ 
+            "meaning": "ماندگار"
+         },
+
+         {
+            "word": "slots :",
+ 
+            "meaning": "شکاف، درز، جا"
+         },
+
+         {
+            "word": "built-in :",
+ 
+            "meaning": "توکار"
+         },
+
+         {
+            "word": "responsible :",
+ 
+            "meaning": "مسئول"
+         },
+
+         {
+            "word": "separate :",
+ 
+            "meaning": "مجزا"
+         },
+
+         {
+            "word": "graphics-intense :",
+ 
+            "meaning": "شدیداً گرافیکی"
+         },
+
+         {
+            "word": "upgraded :",
+ 
+            "meaning": "بهتر کردن"
+         }
+
+        ]
+    }

@@ -1,0 +1,337 @@
+{
+    "text":"Digital Virus \n A digital virus is a computer program that can replicate itself and disseminate from one computer to another. The term _virus_ is also commonly, but erroneously, employed to refer to other types of malware, including but not confined to adware and spyware programs that do not have a reproductive ability. Malwares such as Trojan horses and worms are sometimes confused with viruses, which are technically different. A worm can utilize security vulnerabilities to spread itself automatically to other computers through networks, while a Trojan horse is a program that shows harmless but performs malicious functions. Worms and Trojan horses, like viruses, may harm a computer system's data or performance. Some viruses and other malwares have symptoms noticeable to the computer user, but many are surreptitious or simply do nothing to call attention to themselves. Some viruses do nothing apart from reproducing themselves. \n1. The vulnerability of operating systems to viruses :\n Just as a genetic variety in a population decreases the chance of a single disease destroys a population, the variety of software systems on a network similarly confines the destructive potential of viruses and malware. This became a particular concern in the 1990s, when Microsoft gained market dominance in desktop operating systems, web browsers, and Office suites. Writers of viruses and malware, due to Microsoft's desktop dominance, target Microsoft software. Although Windows is by far the most popular target operating system for virus writers, viruses also exist on other platforms. Any operating system that allows thirdparty programs to run can theoretically be infected by viruses. \n2. Types of Digital Virus :\n In order to replicate itself, a virus must be permitted to execute code and write to the memory. For this reason, many viruses attach themselves to executable files that may be part of legitimate programs. If a user attempts to launch an infected program, the virus code may be executed simultaneously. Viruses can be divided into two types based on their behavior when they are executed. Nonresident viruses immediately search for other infectable hosts, infect those targets, and finally transfer control to the application program they infected. Resident viruses do not search for hosts when they are launched. Instead, a resident virus loads itself into memory on execution and transfers control to the host program. The virus stays active on the background and infects new hosts when other programs or the operating system itself accesses those files. \n2.1. Nonresident viruses :\n Nonresident viruses can be thought of as consisting of a finder module and a replication module. The finder module is responsible for finding new files to infect. For each new executable file the finder module encounters, it calls the replication module to infect that file. \n2. 2. Resident viruses :\n Resident viruses contain a replication module that is similar to the one employed by nonresident viruses. A finder module, however, does not call this module. The virus loads the replication module into memory when it is executed and ensures that this module is executed each time the operating system is called to perform a certain operation. The replication module can be called; for example, each time the operating system executes a file. In this case, the virus infects every suitable program that is executed on the computer. \n3. Tricks of Digital Viruses :\n3.1. Stealth Strategies :\n Some viruses employ different kinds of deception to avoid user detection. Some old viruses, especially on the MS-DOS platform, keep unchanged the _last modified_ date of a host file when the virus infects the file. This approach does not deceive antivirus software, especially those, which maintain cyclic redundancy checks on file changes. Some viruses can infect files without increasing their sizes or damaging the files. They fulfill this by overwriting unused areas of executable files. These are called cavity viruses. For example, the CIH virus, or Chernobyl Virus, infects Portable Executable files. Because those files have many empty gaps, the small length virus does not add to the size of the file. Some viruses try to avoid detection by destroying the tasks associated with antivirus software before it can detect them. As computers and operating systems improve, old hiding techniques need to be updated or replaced. Protecting a computer against viruses may require migrating a file system towards detailed and explicit permission for every kind of file access. \n3. 2. Read request intercepts :\n While some antivirus software employ various techniques to counter stealth mechanisms, the infection occurs and any recourse to clean the system is unreliable. In Microsoft Windows operating systems, the NTFS file system is proprietary. Direct access to files without using the Windows OS is undocumented. This leaves antivirus software little alternative but sends a read request to Windows OS files that handle such requests. Some viruses trick antivirus software by intercepting its requests to the OS. A virus can hide itself by intercepting the request to read the infected file, handling the request itself, and returning an uninfected version of the file to the antivirus software. The interception can occur through code injection of the actual operating system files that would handle the read request. Thus, an antivirus software attempting to detect the virus will either not be given permission to read the infected file, or the read request will be served with the uninfected version of the same file. The only reliable method to avoid stealth is to boot from a medium that is known to be clean. Security software can then be used to check the dormant operating system files. Most security software relies on virus signatures, or they employ heuristics. Security software may also use a database of file hashes for Windows OS files, so the security software can identify altered files, and request Windows installation media to replace them with authentic versions. In older versions of Windows, file hashes of Windows OS files stored in Windows to allow file integrity/authenticity to be checked could be overwritten so that the System File Checker would report that altered system files are authentic, so using file hashes to scan for altered files would not always guarantee finding an infection. \n3.3. Self-modification :\n Most modern antivirus programs try to find virus-patterns inside ordinary programs by scanning them for so-called virus signatures. Unfortunately, the term is misleading, in that viruses do not possess unique signatures in the way that human beings do. Such a virus signature is merely a sequence of bytes that an antivirus program looks for because it is known to be part of the virus. A better term would be _search strings_. Different antivirus programs will employ different search strings, and indeed different search methods, when identifying viruses. If a virus scanner finds such a pattern in a file, it will double check to make sure that it has found the virus. This is because it may merely be a coincidental sequence in an innocent file. Then the user can delete, or (in some cases) _clean_ or _heal_ the infected file. Some viruses employ techniques that make detection difficult by means of signatures but probably not impossible. These viruses modify their code on each infection. That is, each infected file contains a different variant of the virus. \n3.4. Encryption with a variable key :\n A more advanced method is the use of simple encryption to encipher the virus. In this case, the virus consists of a small decrypting module and an encrypted copy of the virus code. If the virus is encrypted with a different key for each infected file, the only part of the virus that remains constant is the decrypting module, which would (for example) be appended to the end. In this case, a virus scanner cannot directly detect the virus using signatures, but it can still detect the decrypting module, which still makes indirect detection of the virus possible. Since these signatures would be symmetric keys, stored on the infected host, they can decrypt the final virus, but are probably not required. This is because the self-modifying code rarely flags the file as suspicious. An old, but compact, encryption involves XORing each byte in a virus with a constant, so that the exclusive-OR operation had to be only repeated for decryption. It is suspicious for a code to modify itself, so the code to do the encryption/decryption may be part of the signature in many virus definitions. \n4. Antivirus software :\n Many users install antivirus software that can detect and eliminate known viruses when the computer attempts to download or run the executable files (which may be distributed as an email attachment, or on USB flash drives, for examples). Some antivirus software block known malicious web sites that attempt to install malware. Antivirus software does not change the underlying capability of hosts to transmit viruses. Users must update their software regularly to patch security vulnerabilities (holes). Antivirus software also needs to be regularly updated in order to recognize the latest threats. \n4.1. How Antivirus software works :\n There are two common methods that an antivirus software application uses to detect viruses. The first most common method of virus detection uses a list of virus signature definitions. This works by examining the content of the computer memory (its RAM, and boot sectors) and the files stored on fixed or removable drives (hard drives, floppy drives, or USB flash drives), and comparing those files against a database of known virus _signatures_ . As mentioned before, Virus signatures are just strings of code that are used to identify individual viruses; for each virus, the anti-virus designer tries to choose a unique signature string that will not be found in a legitimate program. Different anti-virus programs use different _signatures_ to identify viruses. The disadvantage of this detection method is that users are only protected from viruses that are detected by signatures in their most recent virus definition update, and not protected from new viruses. A second method to find viruses is to use a heuristic algorithm based on common virus behaviors. This method has the ability to detect new viruses for which antivirus security firms have yet to define a _signature_ , but it also gives rise to more false positives than using signatures. False positives can be disruptive, especially in a commercial environment.",
+    "words": [
+        {
+            "word": "Erroneous (adj) :",
+ 
+            "meaning": "اشتباه"
+         },
+
+         {
+            "word": "Malicious (adj) :",
+ 
+            "meaning": "بدخواه، بدجنس"
+         },
+
+         {
+            "word": "Surreptitious (adj) :",
+ 
+            "meaning": "پنهانی، مخفی، مخفیانه"
+         },
+
+         {
+            "word": "Surreptitious (adj) :",
+ 
+            "meaning": "بالقوه، امکان"
+         },
+
+         {
+            "word": "Vulnerable (adj) :",
+ 
+            "meaning": "آسیب پذیر"
+         },
+
+         {
+            "word": "Legitimate (adj) :",
+ 
+            "meaning": "مشروع ، قانونی"
+         },
+
+         {
+            "word": "Replication (n) :",
+ 
+            "meaning": "کپی"
+         },
+
+         {
+            "word": "Encipher (v) :",
+ 
+            "meaning": "کد کردن، رمزی کردن"
+         },
+
+         {
+            "word": "disseminate :",
+ 
+            "meaning": "منتشر کردن، پراکندن"
+         },
+
+         {
+            "word": "malware :",
+ 
+            "meaning": "بدافزار"
+         },
+
+         {
+            "word": "confined :",
+ 
+            "meaning": "محدود شدن"
+         },
+
+         {
+            "word": "spyware :",
+ 
+            "meaning": "ادوات جاسوسی"
+         },
+
+         {
+            "word": "symptoms :",
+ 
+            "meaning": "نشان، اثر"
+         },
+
+         {
+            "word": "variety :",
+ 
+            "meaning": "تنوع"
+         },
+
+         {
+            "word": "destroys :",
+ 
+            "meaning": "ویران کردن"
+         },
+
+         {
+            "word": "concern :",
+ 
+            "meaning": "نگرانی"
+         },
+
+         {
+            "word": "dominance :",
+ 
+            "meaning": "تسلط، غلبه"
+         },
+
+         {
+            "word": "suites :",
+ 
+            "meaning": "ملتزمین، همراهان"
+         },
+
+         {
+            "word": "by far :",
+ 
+            "meaning": "به مراتب ، بسیار"
+         },
+
+         {
+            "word": "third_party :",
+ 
+            "meaning": "شخص ثالث"
+         },
+
+         {
+            "word": "permitted :",
+ 
+            "meaning": "اجازه دادن"
+         },
+
+         {
+            "word": "attach :",
+ 
+            "meaning": "چسباندن"
+         },
+
+         {
+            "word": "launch :",
+ 
+            "meaning": "بارگذاری کردن"
+         },
+
+         {
+            "word": "Nonresident :",
+ 
+            "meaning": "غیر مقیم"
+         },
+
+         {
+            "word": "infectable :",
+ 
+            "meaning": "قابل آلوده شدن"
+         },
+
+         {
+            "word": "encounters :",
+ 
+            "meaning": "مواجه شدن"
+         },
+
+         {
+            "word": "ensures :",
+ 
+            "meaning": "اطمینان یافتن"
+         },
+
+         {
+            "word": "deception :",
+ 
+            "meaning": "حقه، اغفال"
+         },
+
+         {
+            "word": "fulfill :",
+ 
+            "meaning": "انجام دادن"
+         },
+
+         {
+            "word": "cavity :",
+ 
+            "meaning": "حفره"
+         },
+
+         {
+            "word": "Protecting :",
+ 
+            "meaning": "محافظت کردن"
+         },
+
+         {
+            "word": "migrating :",
+ 
+            "meaning": "مهاجرت کردن"
+         },
+
+         {
+            "word": "explicit :",
+ 
+            "meaning": "صریح، آشکار"
+         },
+
+         {
+            "word": "stealth :",
+ 
+            "meaning": "نهانکاری"
+         },
+
+         {
+            "word": "recourse :",
+ 
+            "meaning": "توسل"
+         },
+
+         {
+            "word": "proprietary :",
+ 
+            "meaning": "انحصاری بودن"
+         },
+
+         {
+            "word": "alternative :",
+ 
+            "meaning": "جایگزین"
+         },
+
+         {
+            "word": "dormant :",
+ 
+            "meaning": "غیرفعال"
+         },
+
+         {
+            "word": "integrity :",
+ 
+            "meaning": "درستی ، صداقت"
+         },
+
+         {
+            "word": "so-called :",
+ 
+            "meaning": "اصطلاح"
+         },
+
+         {
+            "word": "misleading :",
+ 
+            "meaning": "غلط انداز"
+         },
+
+         {
+            "word": "possess :",
+ 
+            "meaning": "دارا (مالک) بودن"
+         },
+
+         {
+            "word": "coincidental :",
+ 
+            "meaning": "اتفاقی"
+         },
+
+         {
+            "word": "innocent :",
+ 
+            "meaning": "پاک، بیگناه"
+         },
+
+         {
+            "word": "encryption :",
+ 
+            "meaning": "کدگذاری"
+         },
+
+         {
+            "word": "decrypting :",
+ 
+            "meaning": "کدگشا"
+         },
+
+         {
+            "word": "append :",
+ 
+            "meaning": "اضافه (ضمیمه کردن)"
+         },
+
+         {
+            "word": "symmetric :",
+ 
+            "meaning": "متقارن"
+         },
+
+         {
+            "word": "compact :",
+ 
+            "meaning": "فشرده"
+         },
+
+         {
+            "word": "eliminate :",
+ 
+            "meaning": "حذف کردن"
+         },
+
+         {
+            "word": "block :",
+ 
+            "meaning": "مسدود کردن"
+         },
+
+         {
+            "word": "underlying :",
+ 
+            "meaning": "پایه، اصلی"
+         },
+
+         {
+            "word": "regularly :",
+ 
+            "meaning": "به طور منظم"
+         },
+
+         {
+            "word": "patch :",
+ 
+            "meaning": "وصله کردن"
+         },
+
+         {
+            "word": "threats :",
+ 
+            "meaning": "تهدید"
+         }
+
+        ]
+ }
+
+

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a, button {
+        @apply transition-all duration-100 ease-in cursor-pointer;
+    }
+
+    @keyframes slide-in {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes slide-out {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .slide-in {
+        animation: slide-in .5s ease-in-out;
+    }
+
+    .slide-out {
+        animation: slide-out .5s ease-in-out;
+    }
+
+    .active-nav {
+        @apply underline text-teal-600 decoration-teal-700
+    }
+}
