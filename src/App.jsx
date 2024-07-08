@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const Home = lazy(() => import("./Pages/Home"));
 const Unit = lazy(() => import("./Pages/Unit"));
 const AddUnit = lazy(() => import("./Pages/AddUnit"));
+const EditUnit = lazy(() => import("./Pages/EditUnit"));
 
 export default function App() {
 	return (
@@ -14,6 +15,7 @@ export default function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/unit/:unit" element={<Unit />} />
+						<Route path="/unit/:unit/edit" element={<EditUnit />} />
 						<Route path="/unit/add" element={<AddUnit />} />
 					</Routes>
 				</Suspense>
