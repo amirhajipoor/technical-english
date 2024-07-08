@@ -7,7 +7,7 @@ import Logo from "../assets/logo.png";
 export default function Layout({ children }) {
 	const [open, setOpen] = useState(false);
 	const [localUnits, setLocalUnits] = useState(
-		JSON.parse(localStorage.getItem("localUnits") || '[]')
+		JSON.parse(localStorage.getItem("localUnits") || "[]")
 	);
 
 	const params = useParams();
@@ -103,6 +103,28 @@ export default function Layout({ children }) {
 								))}
 							</ul>
 
+							<span className=" mt-4 text-teal-600 block">Local Units</span>
+
+							<ul className="text-slate-700 leading-7">
+								{localUnits.map((unit) => (
+									<NavLink
+										className={({ isActive }) =>
+											isActive ? "active-nav font-bold" : ""
+										}
+										to={`/unit/${unit.id}`}
+										key={unit.id}
+									>
+										<li className="block hover:bg-slate-100 duration-150 px-4 py-2 rounded-md">
+											{unit.title}
+										</li>
+									</NavLink>
+								))}
+
+								{localUnits.length == 0 && (
+									<span className="block">Nothing added</span>
+								)}
+							</ul>
+
 							<div className="mt-4">
 								<Link to="/unit/add">
 									<button className="px-4 py-2 rounded-lg shadow-sm text-teal-600 border-2 border-teal-600 flex items-center gap-x-2 hover:bg-teal-600 hover:text-white duration-150">
@@ -149,7 +171,9 @@ export default function Layout({ children }) {
 							</NavLink>
 						))}
 
-						{localUnits.length == 0 && <span className="block mx-4">Nothing added</span>}
+						{localUnits.length == 0 && (
+							<span className="block mx-4">Nothing added</span>
+						)}
 					</ul>
 
 					<div className="p-4">
