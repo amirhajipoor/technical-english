@@ -114,7 +114,7 @@ export default function Layout({ children }) {
 										to={`/unit/${unit.id}`}
 										key={unit.id}
 									>
-										<li className="block hover:bg-slate-100 duration-150 px-4 py-2 rounded-md">
+										<li className="block hover:bg-slate-100 duration-150 py-2 rounded-md">
 											{unit.title}
 										</li>
 									</NavLink>
